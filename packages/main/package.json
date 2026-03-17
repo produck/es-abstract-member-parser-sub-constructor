@@ -1,6 +1,6 @@
 {
 	"name": "@produck/es-abstract-member-parser-sub-constructor",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Member parser to check sub-constructor in @produck/es-abstract.",
 	"license": "MIT",
 	"author": "ChaosLee",
