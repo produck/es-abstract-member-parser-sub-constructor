@@ -18,7 +18,7 @@ describe('::SubConstructor()', () => {
 		]) {
 			assert.throws(() => SubConstructor(sample), {
 				name: 'TypeError',
-				message: 'Invalid "args[0]", one "constructor" expected.',
+				message: 'Invalid "args[0] as base", one "constructor" expected.',
 			});
 		}
 	});

@@ -5,6 +5,6 @@
  * @returns A parser function that validates and returns the sub-constructor value
  * @throws {TypeError} If base is not a constructor
  */
-export function SubConstructor(
-	base: new (...args: unknown[]) => unknown,
-): (value: unknown) => new (...args: unknown[]) => unknown;
+export function SubConstructor<B extends new (...args: unknown[]) => unknown>(
+	base: B,
+): (value: unknown) => B;

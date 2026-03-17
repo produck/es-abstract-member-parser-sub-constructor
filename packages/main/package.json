@@ -5,16 +5,11 @@
 	"license": "MIT",
 	"author": "ChaosLee",
 	"keywords": [
-		"constructor",
+		"produck",
+		"es-abstract",
+		"member-parser",
 		"sub-constructor",
-		"derived",
-		"extends",
-		"class",
-		"prototype",
-		"inheritance",
-		"abstract",
-		"member",
-		"parser"
+		"inheritance"
 	],
 	"repository": {
 		"type": "git",
@@ -46,6 +41,10 @@
 	},
 	"dependencies": {
 		"@produck/is-constructor": "^1.0.1",
+		"@produck/is-sub-constructor": "^1.0.2",
 		"@produck/type-error": "^0.1.5"
+	},
+	"devDependencies": {
+		"@produck/es-abstract-token": "^0.2.2"
 	}
 }
