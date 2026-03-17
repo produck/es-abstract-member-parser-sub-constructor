@@ -1,0 +1,51 @@
+{
+	"name": "@produck/es-abstract-member-parser-sub-constructor",
+	"version": "0.1.0",
+	"description": "Member parser to check sub-constructor in @produck/es-abstract.",
+	"license": "MIT",
+	"author": "ChaosLee",
+	"keywords": [
+		"constructor",
+		"sub-constructor",
+		"derived",
+		"extends",
+		"class",
+		"prototype",
+		"inheritance",
+		"abstract",
+		"member",
+		"parser"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/produck/es-abstract-member-parser-sub-constructor.git"
+	},
+	"bugs": {
+		"url": "https://github.com/produck/es-abstract-member-parser-sub-constructor/issues"
+	},
+	"homepage": "https://github.com/produck/es-abstract-member-parser-sub-constructor#readme",
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"main": "src/index.mjs",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./src/index.mjs"
+		}
+	},
+	"files": [
+		"src",
+		"index.d.ts"
+	],
+	"scripts": {
+		"test": "node ./test/index.mjs",
+		"test:only": "node --test-only ./test/index.mjs"
+	},
+	"dependencies": {
+		"@produck/is-constructor": "^1.0.1",
+		"@produck/type-error": "^0.1.5"
+	}
+}
