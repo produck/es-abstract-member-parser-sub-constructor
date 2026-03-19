@@ -63,7 +63,7 @@ describe('Example::SubConstructor with @produck/es-abstract-token', () => {
 
 			assert.throws(() => widget.Renderer, {
 				name: 'TypeError',
-				message: 'Invalid "member", one "BaseRenderer" expected.',
+				message: 'Invalid "member", one "SubConstructor of BaseRenderer" expected.',
 			});
 		});
 
@@ -76,7 +76,7 @@ describe('Example::SubConstructor with @produck/es-abstract-token', () => {
 
 			assert.throws(() => widget.Renderer, {
 				name: 'TypeError',
-				message: 'Invalid "member", one "BaseRenderer" expected.',
+				message: 'Invalid "member", one "SubConstructor of BaseRenderer" expected.',
 			});
 		});
 	});
@@ -134,7 +134,7 @@ describe('Example::SubConstructor with @produck/es-abstract-token', () => {
 
 			assert.throws(() => Proxy.Strategy, {
 				name: 'TypeError',
-				message: 'Invalid "member", one "BaseStrategy" expected.',
+				message: 'Invalid "member", one "SubConstructor of BaseStrategy" expected.',
 			});
 		});
 	});
@@ -177,7 +177,7 @@ describe('Example::SubConstructor with @produck/es-abstract-token', () => {
 			assert.equal(handler.Input, FileInput);
 			assert.throws(() => handler.Output, {
 				name: 'TypeError',
-				message: 'Invalid "member", one "BaseOutput" expected.',
+				message: 'Invalid "member", one "SubConstructor of BaseOutput" expected.',
 			});
 		});
 	});

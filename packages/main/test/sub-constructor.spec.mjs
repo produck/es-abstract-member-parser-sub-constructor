@@ -49,7 +49,7 @@ describe('::SubConstructor()', () => {
 		it('should throw if value is the same as base.', () => {
 			assert.throws(() => SubConstructor(Base)(Base), {
 				name: 'TypeError',
-				message: 'Invalid "member", one "Base" expected.',
+				message: 'Invalid "member", one "SubConstructor of Base" expected.',
 			});
 		});
 
@@ -58,7 +58,7 @@ describe('::SubConstructor()', () => {
 
 			assert.throws(() => SubConstructor(Base)(Other), {
 				name: 'TypeError',
-				message: 'Invalid "member", one "Base" expected.',
+				message: 'Invalid "member", one "SubConstructor of Base" expected.',
 			});
 		});
 
@@ -75,7 +75,7 @@ describe('::SubConstructor()', () => {
 			]) {
 				assert.throws(() => SubConstructor(Base)(sample), {
 					name: 'TypeError',
-					message: 'Invalid "member", one "Base" expected.',
+					message: 'Invalid "member", one "SubConstructor of Base" expected.',
 				});
 			}
 		});
@@ -83,7 +83,7 @@ describe('::SubConstructor()', () => {
 		it('should throw if value is the base of another constructor.', () => {
 			assert.throws(() => SubConstructor(Child)(Base), {
 				name: 'TypeError',
-				message: 'Invalid "member", one "Child" expected.',
+				message: 'Invalid "member", one "SubConstructor of Child" expected.',
 			});
 		});
 	});

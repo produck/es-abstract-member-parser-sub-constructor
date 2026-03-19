@@ -9,7 +9,7 @@ export function SubConstructor(base) {
 
 	return function parseSubConstructor(value) {
 		if (!isSubConstructor(value, base)) {
-			ThrowTypeError('member', base.name);
+			ThrowTypeError('member', `SubConstructor of ${base.name}`);
 		}
 
 		return value;
